@@ -1,0 +1,14 @@
+.introBtm {
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.cmpyName {
+    color: #6d42a6;
+    font-family: var(--font-Yatra) !important;
+}
+
+.introMainContent {
+
+    font-family: var(--font-Yatra) !important;
+}

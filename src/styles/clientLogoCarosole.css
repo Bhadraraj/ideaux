@@ -1,0 +1,52 @@
+/* .clientLogoOuter {
+    padding: 30px;
+
+} */
+.clientLogoCarosole {
+    overflow: hidden;
+}
+
+.clientLogoOuter {
+    padding: 20px;
+    width: 100px;
+}
+
+.clientLogoOuter img {
+    width: 50px;
+    box-shadow: 1px 1px 5px rgb(222, 222, 222);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.clientLogoOuter:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.slick-slide {
+    opacity: 0.1;
+    transition: 1s;
+}
+
+.slick-slide.slick-active {
+    opacity: 1 !important;
+    /* transition: 1s; */
+}
+
+
+
+@media only screen and (max-width:992px) {
+    .clientLogoOuter {
+
+        width: 100px;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    .clientLogoOuter {
+        padding: 14px;
+        width: 100px;
+    }
+}

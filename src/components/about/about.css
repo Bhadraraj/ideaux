@@ -1,0 +1,58 @@
+.aboutUsSection li {
+    line-height: 30px;
+    list-style-type: none;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+.aboutUsSection li b {
+    color: var(--subHeading-color);
+}
+
+.aboutUsSection ul {
+    padding: 0px;
+}
+
+.aboutUsSection svg {
+    color: var(--lavender-color);
+}
+
+.ourAimOuter {
+    padding: 50px;
+    /* background-image: url(../../assests/img/aimCardBg.png);   */
+    background-size: cover;
+    box-shadow: 1px 1px 8px #ece5ff;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.ourAimOuterBody p {
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 15px;
+}
+
+.aimCardTopImg {
+    height: 100px;
+    width: 100px;
+ 
+    position: absolute;
+    box-shadow: 1px 1px 8px #ece5ff;
+    padding: 10px;
+    top: -40px;
+    left: -40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aimCardTopImg img {
+    height: 60px;
+    width: 60px;
+
+
+
+}

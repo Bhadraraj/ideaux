@@ -1,0 +1,35 @@
+.inovateSection {
+    padding: 100px;
+    background-color: var(--primary-bg);
+    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight {
+    color: blue;
+}
+
+.cta-content {
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+
+}
+
+.cta-content span {
+    color: var(--highlight-heading);
+
+}
+
+.cta-button {
+    /* background-color: var(--highlight-heading); */
+    background-color: #ff5b5b;
+
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    color: white;
+    text-decoration: none !important;
+}
