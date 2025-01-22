@@ -59,6 +59,26 @@
     border-radius: 50px 20px;
     position: relative;
     box-shadow: 0.5px 0.5px 12px #dfd3eb;
+    margin-bottom: 30px
+}
+
+
+.swiper-pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #ccc;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #007bff;
 }
 
 

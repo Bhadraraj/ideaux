@@ -1,0 +1,26 @@
+.whyChooseUsSection li {
+    line-height: 30px;
+    list-style-type: none;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+.whyChooseUsSection li b {
+    color: var(--subHeading-color);
+}
+
+.whyChooseUsSection ul {
+    padding: 0px;
+}
+
+.whyChooseUsSection svg {
+    color: var(--lavender-color);
+}
+
+
+
+.ourAimOuterBody p {
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 15px;
+}

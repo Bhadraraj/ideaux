@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import '../../styles/swipper.css';
 import 'swiper/css'; // Import Swiper's default CSS
 import 'swiper/css/pagination'; // Import pagination styles
-import 'swiper/css/autoplay'; // Import autoplay styles
-
+import 'swiper/css/navigation'; // Import navigation styles
+import { FaCircleRight } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from 'swiper/react'; // Import Swiper and SwiperSlide
+import { Autoplay, Pagination, Navigation } from 'swiper/modules'; // Import Autoplay, Pagination, and Navigation
 
+import { FaArrowAltCircleLeft } from "react-icons/fa";
 const Index = () => {
+    const swiperRef = useRef(null); // Reference for Swiper instance
 
     const truncateTestimonial = (testimonial, wordLimit) => {
         const words = testimonial.split(' ');
@@ -55,7 +58,6 @@ const Index = () => {
         },
     ];
 
-
     return (
         <section className="testimonial">
             <div className="container">
@@ -63,8 +65,27 @@ const Index = () => {
                 <p className="text-center subHeading mb-0">
                     Echoes of Excellence, Praise in Practice
                 </p>
+                <div className="row">
+                    <div className="col-12 d-flex justify-content-end">
+                        <div>
+                            <button
+                                className='btn btn-sm btn-primary me-2'
+                                onClick={() => swiperRef.current.swiper.slidePrev()} // Navigate to previous slide
+                            >
+                         <FaArrowAltCircleLeft/>
+                            </button>
+                            <button
+                                className='btn btn-sm btn-primary'
+                                onClick={() => swiperRef.current.swiper.slideNext()} // Navigate to next slide
+                            >
+                                <FaCircleRight />
+                            </button>
+                        </div>
+                    </div>
+                </div>
                 <div className="responsive-container-block bg">
                     <Swiper
+                        ref={swiperRef}
                         spaceBetween={30}
                         slidesPerView={1}
                         pagination={{ clickable: true }}
@@ -87,7 +108,7 @@ const Index = () => {
                                 spaceBetween: 40,
                             },
                         }}
-                        
+                        modules={[Autoplay, Pagination, Navigation]}
                         className="mySwiper"
                     >
                         {testimonialData.map((testimonial, index) => (
@@ -118,7 +139,7 @@ const Index = () => {
                     </Swiper>
                 </div>
             </div>
-        </section >
+        </section>
     );
 }
 

@@ -16,7 +16,7 @@ function MultipleRows() {
         rows: 1,
         slidesPerRow: 1,
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 500,
         dots: true,
         responsive: [
             {
